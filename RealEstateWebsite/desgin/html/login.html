@@ -16,55 +16,15 @@
 <body>
    
 <!-- header section starts  -->
-
-<header class="header">
-
-   <nav class="navbar">
-      <section class="flex">
-         <div id="menu-btn" class="fas fa-bars"></div>
-
-         <a href="home.html" class="logo">
-            <img src="../assets/images/logo-g12.svg" alt="Group Logo">
-         </a>
-
-         <div class="menu">
-            <ul>
-               <li><a href="#">Buy<i class="fas fa-angle-down"></i></a>
-                  <ul>
-                     <li><a href="house.html">House</a></li>
-                     <li><a href="flat.html">Flat</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Rent<i class="fas fa-angle-down"></i></a>
-                  <ul>
-                     <li><a href="#">House</a></li>
-                     <li><a href="#">Flat</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Sell</a></li>
-            </ul>
-         </div>
-
-         <ul>
-            <li><a href="#">Help<i class="fas fa-angle-down"></i></a>
-               <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="contact.html#faq">FAQ</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
-               <ul>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="register.html">Register</a></li>
-               </ul>
-            </li>
-         </ul>
-      </section>
-   </nav>
-</header>
-
-<!-- header section ends -->
+<div id="header-placeholder"></div>
+<script>
+   fetch('header.html')
+     .then(response => response.text())
+     .then(data => {
+       document.getElementById('header-placeholder').innerHTML = data;
+     });
+</script>
+<!-- header section ends  -->
 
 <!-- login section starts  -->
 
@@ -74,6 +34,7 @@
       <h3>Welcome back!</h3>
       <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
       <input type="password" name="pass" required maxlength="20" placeholder="Enter your password" class="box">
+      <p>Forgot your password? <a href = "recover_password.html">Recover password</a></p>
       <p>Don't have an account? <a href="register.html">Register new</a></p>
       <input type="submit" value="login now" name="submit" class="btn">
    </form>
@@ -83,39 +44,15 @@
 <!-- login section ends -->
 
 <!-- footer section starts  -->
-
-<footer class="footer">
-
-   <section class="flex">
-
-      <div class="box">
-         <a href="home.html"><span>Home</span></a>
-         <a href="about.html"><span>About</span></a>
-         <a href="contact.html"><span>Contact</span></a>
-         <a href="listings.html"><span>All Listings</span></a>
-      </div>
-
-      <div class="box">
-         <a href="#"><i class="fas fa-phone"></i><span>123456789</span></a>
-         <a href="#"><i class="fas fa-phone"></i><span>1112223333</span></a>
-         <a href="#"><i class="fas fa-envelope"></i><span>abcde@gmail.com</span></a>
-         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam - 000084</span></a>
-      </div>
-
-      <div class="box">
-         <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
-         <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
-         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
-
-      </div>
-
-   </section>
-
-   <div class="credit">&copy; G12 Real Estate Listing Website</div>
-
-</footer>
-
-<!-- footer section ends -->
+<div id="footer-placeholder"></div>
+<script>
+   fetch('footer.html')
+   .then(response => response.text())
+   .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+   });
+</script>
+<!-- footer section ends  -->
 
 
 <!-- custom js file link  -->

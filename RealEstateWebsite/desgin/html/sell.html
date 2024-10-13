@@ -132,14 +132,14 @@
       <div class="flex">
         <div class="box">
           <p>Property Type <span>*</span></p>
-          <select name="type" class="input" required>
+          <select name="type" class="input" required title="#">
             <option value="flat">Flat</option>
             <option value="house">House</option>
           </select>
         </div>
         <div class="box">
           <p>BHK Numbers <span>*</span></p>
-          <select name="bhk" class="input" required>
+          <select name="bhk" class="input" required title="#">
             <option value="1">1 BHK</option>
             <option value="2">2 BHK</option>
             <option value="3">3 BHK</option>
@@ -153,28 +153,28 @@
         </div>
         <div class = "box">
           <p>Status <span>*</span></p>
-          <select name="status" class="input required">
+          <select name="status" class="input required" title="#">
             <option value="1">Ready to move</option>
             <option value="0">On progressing</option>
           </select>
         </div>
         <div class = "box">
           <p>Loan <span>*</span></p>
-          <select name="loan" class="input required">
+          <select name="loan" class="input required" title="#">
             <option value="1">Available</option>
             <option value="0">Not available</option>
           </select>
         </div>
         <div class="box">
           <label for="area">Carpet area</label>
-          <input type="number" id="area" name="square" class="input" placeholder="Enter your carpet area" required>
+          <input type="number" id="area" name="square" class="input" placeholder="Enter your carpet area" required min="0">
         </div>
         <div class="box">
           <label for="floors">Floor(s) <span>*</span></label>
           <input type="number" id="floors" name="price" class="input" placeholder="Enter number of floor(s)" required>
         </div>
       </div>
-      <div class="box">
+      <div class="info">
         <p>Description</p>
         <input type="text" name="description" required maxlength="200" placeholder="Enter your description" class="input">
       </div>
